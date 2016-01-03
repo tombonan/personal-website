@@ -35,7 +35,7 @@ h3, p {
 }
 
 .home-head-text {
-	width: 30%;
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 15px;
 	text-align: center;
@@ -211,6 +211,7 @@ h3, p {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
 	font-size: 16px;
+	line-height: 1.4;
 	font-style: normal;
 	color: #6a6a6a;
 	width: 66%;
@@ -370,5 +371,57 @@ textarea {
  	background-color: #0078e7;
 	transition: background-color 0.1s linear;
  }
+
+
+ @media only screen and (max-width: 890px)  {
+	.publications-container ul {
+    	font-size: 16px;
+	}
+
+	.publications li {
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+
+	.writing-about p {
+		width: 94%;
+	}
+}
+
+@media only screen and (max-width: 650px)  {
+	.publications-container ul {
+    	font-size: 12px;
+	}
+
+	.publications li {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+}
+
+@media only screen and (max-width: 470px)  {
+	.publications-container ul {
+		margin-left: -7%;
+	}
+
+	.publications li {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	.active a i {
+		display: none;
+	}
+
+	.writing-about {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.publications-container ul {
+		margin-left: -9%;
+	}
+}
 
 

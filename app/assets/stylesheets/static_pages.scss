@@ -133,7 +133,7 @@ height: 100vh;
 	width: 100%;
 	height: 60px;
 	bottom: 0;
-	position: absolute;
+	position: fixed;
 	border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -258,12 +258,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e99', end
 
 .about-text-container {
 	width: 100%;
-	height: 220px
+	height: 200px
 }
 
 .about-text-wrapper {
 	width: 86%;
-	margin: 60px auto;
+	margin: 50px auto;
 	text-align: center;
 }
 
@@ -274,6 +274,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e99', end
 	letter-spacing: 0.05em;
 	color: #747474;
 	line-height: 1.5;
+}
+
+.about-icons {
+	padding: 0;
+	width: 320px;
+	margin-left: -20px;
+	margin-top: 40px;
+	list-style-type: none;
+	position: relative;
+	float: left;
+}
+
+.about-icons li {
+	display: inline-block;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.about-icon-circle {
+	padding: 14px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	transition: opacity 0.4s;
+}
+
+.about-icon-circle:hover {
+	opacity: 0.5;
+}
+
+.icon-about {
+
+	height: 18px;
+	width: 18px;
+	vertical-align: middle;
 }
 
 .section-head {
@@ -335,5 +369,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#305e99', end
 	color: #b2b2b2;
 }
 
+
+@media only screen and (max-width: 500px)  {
+	.foot-icon {
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
 
 
