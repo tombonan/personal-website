@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
 	def home
-		@writings = Writing.last(3)
+		@writings = Writing.first(3)
 	end
 end
