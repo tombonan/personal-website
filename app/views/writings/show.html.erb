@@ -1,0 +1,24 @@
+<% provide(:title, 'Article') %>
+<%= render partial: 'writingsheader' %>
+
+<div class = "writing-wrapper">
+<div class = 'writing-content-container'>
+	<h3><%=@writing.title %></h3>
+	<p id = "published-in">
+			Originially published in <i><span id = "writing-show-publication"><%= link_to @writing.publication, "#{@writing.publication_link}", :target => "_blank"%></span></i> 
+	</p>
+	<p id = "writing-date"><%= @writing.date %></p>
+	<p id = "back-to-index" class = "date-margin"><span id = "writing-show-publication"><%= link_to "Back to All Articles", writings_path %></span></p>
+	<div class = 'writing-content'>
+		<p><%=@writing.body.html_safe %></p>
+	</div>
+
+	<div class = "article-line">
+	<p></p>
+</div>
+</div> <!-- writing content container -->
+
+</div>
+
+
+

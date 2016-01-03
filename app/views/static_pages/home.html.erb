@@ -1,0 +1,58 @@
+<% provide(:title, 'Home') %>
+<div class = "about-slide-container">
+	<div class = "about-slide-head">
+		<div class = "back-circle back"><i class = "pe-7s-angle-left"></i></div>
+	</div>
+	<div class = "about-icon">
+		
+	</div>
+	<div class = "about-text-container">
+		<div class = "about-text-wrapper">
+			<p>I am a writer and web developer from Boulder, Colorado currently studying mathematics and economics at Bucknell University in Pennsylvania.</p>
+		</div>
+	</div>
+	<div class = "section-head">
+		<h1>Current Projects</h1>
+	</div>
+	<div class = "current-projects-list">
+		<div class = "etcetera">
+			<h3>Front- and Backend Designer</h3>
+			<h4>Etcetera Magazine</h4>
+		</div>
+	</div>
+	<div class = "section-head">
+		<h1>Selected Writing</h1>
+	</div>
+	<div class = "selected-writing">
+		<% for writing in @writings do %>
+			<div class = "writing-block">
+				<h3><%= link_to writing.title, writing_path(writing) %></h3>
+				<h4><%= writing.publication %></h4>
+			</div>
+		<% end %>
+	</div>
+
+</div>
+<div class = "background-image">
+<div class = "overlay unclicked">
+	<a href="" class = "top-link about" id = "about"><span class = "fade-in-nav"><i class = "icon top"></i>About</span></a>
+	<a href="/writing" class = "top-link fade-in-nav" id = "writing"><span class = "fade-in-nav"><i class = "icon top"></i>Writing</span></a>
+
+	<div class = "home-center hide">
+		<div class = "laptop-icon fade-in-icon"></div>
+		<h1 class = "fade-in-head">Tom Bonan</h1>
+		<h2 class = "fade-in-text">Web Design</h2>
+	</div>
+
+	<div class = "footer footer-hide">
+		<ul class = "foot-icons hide fade-in-icons">
+			<li class = "foot-icon"><a href="https://www.facebook.com/T0MB0NE" target="_blank"><i class = "icon facebook"></i></a></li>
+			<li class = "foot-icon"><a href="https://github.com/tombonan" target="_blank"><i class = "icon github"></i></a></li>
+			<li class = "foot-icon"><a href="https://www.linkedin.com/in/tombonan" target="_blank"><i class = "icon linkedin"></i></a></li>
+			<li class = "foot-icon"><a href="/writing"><i class = "icon writingicon"></i></a></li>
+			<li class = "foot-icon"><a href="mailto:tlb018@bucknell.edu"><i class = "icon mail"></i></a></li>
+			<li class = "foot-icon about"><a href=""><i class = "icon menu"></i></a></li>
+		</ul>
+	</div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+<% provide(:title, 'Writing') %>
+<%= render partial: 'writingsheader' %>
+
+<div class = "writing-about">
+	<p>This page contains a selection of my writing from my time at Bucknell. I was an Opinions writer and section editor for The <i>Bucknellian</i>, the University's weekly student newspaper. I also write for Campus Vinyl, a student-run music blog, and a student column for the Bucknell University Archives and Special Collections Department.</p>
+</div>
+
+<% for writing in @writings do %>
+<%= link_to (writing_path(writing)) do %>
+	<div class = "writing-link <%= 'bucknellian-article-hover' if writing.publication == 'The Bucknellian'%> <%='cv-article-hover' if writing.publication == 'Campus Vinyl'%> <%='lib-article-hover' if writing.publication == 'Bucknell University Archives'%>">
+		<div class = "writing-link-content">
+			<p><span id = "writing-pub"><%=writing.publication%></span><span id = "writing-date"> &#8212; <%=writing.date%></span></p>
+		<h3><%=writing.title%></h3>	
+		</div>
+	</div>
+<% end %>
+<% end %>
+
+

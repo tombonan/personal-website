@@ -1,0 +1,26 @@
+<%= form_for @writing do |w| %>
+	<p class = 'form-text'>
+		<%= w.label :title %><br>
+		<%= w.text_field :title %>
+	</p>
+	<p class = 'form-text'>
+		<%= w.label :publication %><br>
+		<%= w.text_field :publication %>
+	</p>
+	<p class = 'form-text'>
+		<%= w.label :publication_link %><br>
+		<%= w.text_field :publication_link %>
+	</p>
+	<p class = 'form-text'>
+		<%= w.label :date %><br>
+		<%= w.text_field :date %>
+	</p>
+	<p class = 'form-text' id = "description-field">
+		<%= w.label :body %><br>
+		<%= w.text_area :body, :class => 'ckeditor' %>
+	</p>
+	<p class = 'form-text'>
+		<%= w.submit "Create", :class => 'new-writing-submit' %>
+	</p>
+
+<% end %>

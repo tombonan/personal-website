@@ -1,0 +1,374 @@
+// Place all the styles related to the Writings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the Writings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h3, p {
+	margin: 0;
+	padding: 0;
+}
+
+/* -- writing header -- */
+
+.static-head-container {
+	width: 100%;
+	height: 200px;
+	background: url(image_path('background.jpg')) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.writing-overlay {
+    bottom: 0;
+    height: 200px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+	background: rgba(20, 20, 20, 0.30);
+}
+
+.home-head-text {
+	width: 30%;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#static-head-text {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 300; 
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+#static-head-text a {
+	transition: opacity 0.2s;
+}
+
+#static-head-text a:hover {
+	opacity: 0.6;
+}
+
+#title {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/* -- index css -- */
+
+ .writing-link {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #bebebe;
+	background-color: #fff;
+}
+
+
+.writing-link-content {
+	width: 82%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+
+}
+
+/*
+.writing-link:hover {
+	background-color: #bd662e;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+*/
+
+.bucknellian-article-hover:hover {
+	background-color: #1f5a7f;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.cv-article-hover:hover {
+	background-color: #bd662e;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.lib-article-hover:hover {
+	background-color: #5281AA;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+
+
+.writing-link:hover .writing-link-content h3, .writing-link:hover .writing-link-content p, .writing-link:hover .writing-link-content #writing-date, .writing-link:hover #writing-pub {
+	color: #fff;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.writing-link-content h3 {
+	font-family: 'Raleway', sans-serif;
+   	font-weight: 200;
+   	font-size: 50px; 
+	color: #1f5a7f;
+	letter-spacing: 1px;
+}
+
+.writing-link-content p {
+   	margin-left: 2px;
+   	padding-bottom: 10px;
+   	font-size: 16px;
+}
+
+#writing-pub {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-style: normal;
+   	color: #2e85bd;
+   	letter-spacing: -1px;
+}
+
+#writing-date {
+	font-family: 'Raleway', sans-serif;
+   	font-weight: 200;
+	color: #1f5a7f;
+	letter-spacing: 0px;
+}
+
+.publications-container {
+	width: 100%;
+	border-bottom: 1px solid #bebebe;
+	height: 70px;
+	background-color: #fff;
+}
+
+.publications-container ul {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 100; 
+    color: #989898;
+    font-size: 22px;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.publications li {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 70px;
+}
+
+.outside-links {
+	padding-left: 8px;
+}
+
+#bucknellian:hover {  			
+	color: #2D81B7;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+#cv:hover {
+	color: #ca8457;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+#lib:hover {
+	color: #5281AA;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.writing-about {
+	padding-top: 1px;
+	width: 100%;
+	border-bottom: 1px solid #bebebe;
+	background-color: #fff;
+}
+
+.writing-about p {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 16px;
+	font-style: normal;
+	color: #6a6a6a;
+	width: 66%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: justify;
+}
+
+.writing-about p{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* -- show page -- */
+.writing-wrapper {
+	width: 100%;
+	background-color: #fff;
+}
+.writing-content-container {
+	width: 56%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.writing-content-container h3 {
+margin-top: 70px;
+margin-bottom: 30px;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+font-weight: 200;
+font-size: 50px; 
+color: #1f5a7f;
+letter-spacing: 1px;
+
+}
+
+#writing-show-publication, .writing-content a  {
+	color: #2e85bd;
+}
+
+.date-margin {
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+#back-to-index {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.writing-content {
+	width: 88%;
+	margin-top: 30px;
+}
+
+.writing-content p, .writing-content-container p {
+	line-height: 1.6;
+	color: #444;
+	font-style: normal;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+#published-in {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.writing-content-container a:hover, .writing-content a:hover {
+	color: #1f5a7f;
+}
+
+.article-line {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #bebebe;
+}
+
+@media only screen and (max-width: 700px)  {
+	
+	.writing-content-container {
+	width: 90%;
+	}
+
+	.writing-content-container h3 {
+		font-size: 40px;
+	}
+	
+	.writing-link-content h3 {
+		font-size: 30px;
+	}
+	
+}
+
+/* -- form css -- */
+
+/* -- form css -- */
+
+.form-container h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.form-text {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 16px;
+
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+}
+
+
+textarea:focus, input:focus {
+	border: 1px solid #0078e7;
+}
+
+.form-container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+textarea {
+    height: 100px;
+    width: 80%;
+    text-align: left;
+}
+
+
+ .new-album-submit {
+  color: black;
+  font-family: inherit;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px dotted #0078e7;
+}
+
+ .new-album-submit:hover {
+ 	cursor: pointer;
+ 	background-color: #fff;
+ 	color: #fff;
+ 	background-color: #0078e7;
+	transition: background-color 0.1s linear;
+ }
+
+

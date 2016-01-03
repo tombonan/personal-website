@@ -10,6 +10,46 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require jquery-ui
+ *= require stroke-seven
+ *= require stroke-seven-helper
+ *= require animate.css
+
+ *= require_tree .
  */
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+}
+
+div{
+   margin: 0px;
+   padding: 0px;
+}
+
+table{
+   margin: 0px;
+   padding: 0px;
+}
+h1, h2, h3, h4, h5, p{
+   margin: 0px;
+   padding: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
