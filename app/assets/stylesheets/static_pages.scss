@@ -138,7 +138,7 @@ height: 100vh;
 }
 
 .footer-hide {
-	border-top: 1px solid rgba(255, 255, 255, 0.10);
+	display: none;
 }
 
 .foot-icons {
@@ -200,11 +200,12 @@ height: 100vh;
 
 .about-slide-container {
 	 width: 320px;
-	 height: 779px;
+	 height: 100vh;
 	 right: 0;
 	 position: absolute;
 	 z-index: 999;
 	 background-color: #fff;
+	 overflow-y: scroll;
 }
 
 .about-slide-head {

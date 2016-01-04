@@ -42,6 +42,7 @@ $(function () {
     $('.fade-in-nav').fadeIn(1600);
 })
 
+
   $('.about').click(function() {
     $('.about-slide-container').show('slide', { direction: 'right'}, 250);
     $('.overlay').addClass('clicked', 250);
