@@ -424,4 +424,26 @@ textarea {
 	}
 }
 
+@media only screen and (max-width: 380px) {
+	.publications-container ul {
+		margin-left: -12%;
+	}
+
+	.publications li {
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.publications-container ul {
+		margin-left: -14%;
+	}
+
+	#gone {
+		display: none;
+	}
+}
+
+
 

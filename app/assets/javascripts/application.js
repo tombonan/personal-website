@@ -20,26 +20,39 @@
 
 $(document).ready(function() {  
 $('.about-slide-container').hide();
+$('.fade-in-head').hide();
+$('.fade-in-text').hide();
 
 $(function () {
-    $('.fade-in-head').textillate({
-        in: {
-            effect: 'fadeInDown', 
-            sync: true
-        }
-    });
+    $('.dot-one').delay(600).fadeIn(400);
+    $('.dot-two').delay(700).fadeIn(400);
+    $('.dot-three').delay(800).fadeIn(400);
+    $('.icon-divider').delay(600).fadeIn(400);
+    $('.line-one').delay(900).fadeIn(600);
+    $('.line-two').delay(1000).fadeIn(600);
+    $('.line-three').delay(1100).fadeIn(600);
+    $('.icon-block').delay(1200).fadeIn(600);
 
-    $('.fade-in-text').textillate({
-        in: {
-          effect: 'fadeInDown', 
-          sync: true,
-          
-        }
-    });
+    setTimeout(
+      function() {
+        $('.fade-in-head').show().textillate({
+            in: {
+                effect: 'fadeInDown', 
+                sync: true
+            }
+        });
 
-    $('.fade-in-icon').fadeIn(2200);
-    $('.fade-in-icons').fadeIn(2000);
-    $('.fade-in-nav').fadeIn(1600);
+        $('.fade-in-text').show().textillate({
+            in: {
+              effect: 'fadeInDown', 
+              sync: true,
+              
+            }
+        });
+
+      $('.fade-in-icons').fadeIn(1100);
+      $('.fade-in-nav').fadeIn(1100);
+    }, 1500);
 })
 
 
@@ -59,4 +72,3 @@ $(function () {
     event.preventDefault();
   });
 });
-
