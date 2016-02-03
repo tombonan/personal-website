@@ -2,8 +2,8 @@
 <%= render partial: 'writingsheader' %>
 
 <div class = "writing-wrapper">
+<h3 class = "writing-title"><%=@writing.title %></h3>
 <div class = 'writing-content-container'>
-	<h3><%=@writing.title %></h3>
 	<p id = "published-in">
 			Originially published in <i><span id = "writing-show-publication"><%= link_to @writing.publication, "#{@writing.publication_link}", :target => "_blank"%></span></i> 
 	</p>
