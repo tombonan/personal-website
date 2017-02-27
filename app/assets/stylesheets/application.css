@@ -18,7 +18,29 @@
 
  *= require_tree .
  */
-body {    
+
+ @import url(http://db.onlinewebfonts.com/c/626316468de71ca443dcc4f0e11e896f?family=GeogrotesqueW01-Regular);
+@import url(http://db.onlinewebfonts.com/c/020f16360fa8377a822e7aca744ab756?family=GeogrotesqueW01-UltraLt);
+
+ @font-face {font-family: "Geogrotesque-Regular";
+    src: url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.eot");
+    src: url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/626316468de71ca443dcc4f0e11e896f.svg#GeogrotesqueW01-Regular") format("svg");
+}
+
+@font-face {font-family: "Geogrotesque-Light";
+    src: url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.eot");
+    src: url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/020f16360fa8377a822e7aca744ab756.svg#GeogrotesqueW01-UltraLt") format("svg");
+}
+
+body {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -44,7 +66,7 @@ table{
    margin: 0px;
    padding: 0px;
 }
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p, ul {
    margin: 0px;
    padding: 0px;
 }

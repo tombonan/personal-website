@@ -26,6 +26,7 @@ gem "stroke-seven-rails"
 gem 'non-stupid-digest-assets', '~> 1.0.4'
 gem 'friendly_id', '~> 5.1.0'
 gem 'jquery-ui-rails'
+gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

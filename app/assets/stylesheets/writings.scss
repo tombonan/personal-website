@@ -115,6 +115,12 @@ h3, p {
     -webkit-transition: all 0.5s;
 }
 
+.etc-article-hover:hover {
+	background-color: #fe938c;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
 
 
 
@@ -228,48 +234,53 @@ h3, p {
 
 /* -- show page -- */
 .writing-wrapper {
-	width: 100%;
-	background-color: #fff;
-}
-.writing-content-container {
-	width: 46em;
 	margin: 0 auto;
-	background-color: #fff;
+	width: 90%;
 }
 
 .writing-title {
 margin-top: 70px;
-margin-bottom: 70px;
-text-align: center;
+margin-bottom: 30px;
+margin-left: 20%;
 font-family: 'Raleway', sans-serif;
-font-weight: 200;
+font-weight: 400;
 font-size: 50px; 
 color: #1f5a7f;
 letter-spacing: 1px;
+}
 
+.writing-content {
+	width: 620px;
+	margin-left: 20%;
 }
 
 #writing-show-publication, .writing-content a  {
 	color: #2e85bd;
 }
 
-.date-margin {
-	margin-top: 15px;
-	margin-bottom: 50px;
+#published-in a:hover {
+	color: #1f5a7f;
 }
 
-#back-to-index {
-	font-family: 'Merriweather', serif;
-	font-weight: 300;
-	font-size: 14px;
+#published-in {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    color: #747474;
 }
 
-.writing-content {
-	width: 88%;
-	margin-top: 30px;
+#writing-show-date {
+	margin-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #747474;
 }
 
-.writing-content p, .writing-content-container p {
+.writing-content p{
 	line-height: 1.6;
 	color: #444;
 	font-style: normal;
@@ -278,41 +289,34 @@ letter-spacing: 1px;
 	font-size: 16px;
 }
 
-#published-in {
-	font-family: 'Merriweather', serif;
-	font-weight: 300;
-	font-size: 14px;
-}
-
-.writing-content-container a:hover, .writing-content a:hover {
-	color: #1f5a7f;
-}
-
 .article-line {
-	margin-top: 60px;
-	margin-bottom: 60px;
-	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 160px;
 	height: 1px;
-	border-bottom: 1px solid #bebebe;
+	background-color: rgba(0,0,0,0.2);
+	width: 620px;
 }
 
-@media only screen and (max-width: 700px)  {
-	
-	.writing-content-container {
-	width: 90%;
+ @media only screen and (max-width: 850px)  {
+	.writing-content {
+		width: 90%;
+		margin: 0 auto;
 	}
 
-	.writing-content-container h3 {
-		font-size: 40px;
+	.writing-title {
+		margin-left: 5%;
 	}
-	
-	.writing-link-content h3 {
+ }
+
+ @media only screen and (max-width: 650px)  {
+	.writing-title {
 		font-size: 30px;
+		margin-bottom: 10px;
 	}
-	
-}
+ }
 
-/* -- form css -- */
+
+
 
 /* -- form css -- */
 

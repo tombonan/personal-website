@@ -1,0 +1,2 @@
+module NyrbsHelper
+end

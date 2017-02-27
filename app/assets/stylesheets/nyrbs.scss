@@ -1,0 +1,141 @@
+// Place all the styles related to the Nyrbs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.nyrbs {background-color : #e8f1f5;}
+
+.nyrb-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+table, th, td {
+	height: 360px;
+}
+
+
+.nyrb-block {
+	display: inline-table;
+	width: 320px;
+	height: 360px;
+	background-color: #fff;
+	margin: 30px;
+	border-radius: 8px;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,102,0.1);
+}
+
+
+.color-block {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width: 280px;
+	height: 240px;
+	border-radius: 8px;
+}
+
+.nyrb-background {
+	width: 100%;
+	height: 105px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.nyrb-title {
+	width: 100%;
+	height: 80px;
+}
+
+.nyrb-border {
+	width: 100%;
+	height: 55px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.content-block {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 280px;
+	height: 240px;
+	text-align: center;
+}
+
+.content-block h3 {
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	color: #565656;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.content-block h4 {
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1em;
+	color: #9c9c9c;
+}
+
+.content-block a:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+
+/* --- old styling 
+.nyrb-wrapper {
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+}
+.nyrb-wrapper:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.nyrb-container {
+	width: 100%;
+	height: 200px;
+	border: 2px solid;
+}
+
+.nyrb-container h3 {
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	margin-top: 40px;
+}
+
+.nyrb-divider {
+	height: 2px;
+	margin: 24px auto;
+	width: 160px;
+}
+
+.nyrb-container h4 {
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.3em;
+	margin-top: 24px;
+}
+
+*/
