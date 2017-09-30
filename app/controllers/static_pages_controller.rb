@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 	def home
-		@writings = Writing.first(3)
+		@writings = Writing.order("updated_at DESC").limit(3)
 	end
 
 	def portfolio

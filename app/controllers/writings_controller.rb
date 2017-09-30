@@ -1,6 +1,6 @@
 class WritingsController < ApplicationController
 	def index
-		@writings = Writing.all
+		@writings = Writing.all.order("updated_at DESC")
 	end
 
 	def new

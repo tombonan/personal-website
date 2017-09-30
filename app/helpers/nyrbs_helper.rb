@@ -1,2 +1,0 @@
-module NyrbsHelper
-end
