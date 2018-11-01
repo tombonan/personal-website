@@ -1,0 +1,101 @@
+// Place all the styles related to the projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.project-hover:hover {
+	background-color: #3589c0;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.project-link-content {
+	width: 82%;
+	margin: 0 auto;
+	position: relative;
+	top: 45%;
+  	transform: translateY(-50%);
+}
+
+
+.project-link:hover .project-link-content h3, .project-link:hover .project-link-content p, .project-link:hover .project-link-content #writing-date, .project-link:hover #writing-pub {
+	color: #fff;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.project-link-content h3 {
+	font-family: 'Open Sans', sans-serif;
+   	font-weight: 400;
+   	font-size: 40px; 
+	color: #484848;
+	letter-spacing: 1px;
+}
+
+.project-link-content p {
+   	margin-left: 2px;
+   	padding-bottom: 0px;
+   	font-size: 16px;
+}
+
+.project-body {
+	margin-top: 16px;
+	line-height: 1.6;
+	color: #737373;
+	font-style: normal;
+	font-family: 'Open Sans', serif;
+	font-weight: 400;
+	font-size: 16px;
+	width: 80%;
+}
+
+
+
+
+/* --- responsive css --- */
+
+@media only screen and (max-width: 700px)  {
+	.project-title {
+		font-size: 34px; 
+	}
+
+	#static-head-text {
+		font-size: 30px;
+	}
+
+	.project-link-content h3 {
+		font-size: 30px;
+	}
+
+	.project-link {
+		height: 240px;
+	}
+
+	.project-link-content p {
+		font-size: 14px;
+	}
+
+	.project-body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.project-link-content h3 {
+		font-size: 24px;
+	}
+
+	.project-link {
+		height: 240px;
+	}
+
+	.project-link-content p {
+		font-size: 12px;
+	}
+
+	.project-body {
+		font-size: 12px;
+	}
+}
+
+

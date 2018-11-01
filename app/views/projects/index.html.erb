@@ -1,0 +1,16 @@
+<% provide(:title, 'Projects') %>
+<%= render partial: 'projectsheader' %>
+
+
+<% for project in @projects do %>
+<%= link_to project.link, target: :_blank do %>
+	<div class = "writing-link project-hover project-link">
+			<div class = "project-link-content">
+				<p><span id = "writing-date"><%= project.date %></span></p>
+			<h3><%=project.title%></h3>	
+			<p class = 'project-body'><%= project.body %></p>
+			</div>
+	</div>
+	
+<% end %>
+<% end %>
