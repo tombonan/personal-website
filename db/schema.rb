@@ -13,17 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20181029201237) do
 
-  create_table "nyrbs", force: :cascade do |t|
-    t.string   "title"
-    t.string   "author"
-    t.string   "link"
-    t.string   "title_color"
-    t.string   "background_color"
-    t.string   "border_color"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
-  end
-
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.string   "date"
@@ -31,16 +20,6 @@ ActiveRecord::Schema.define(version: 20181029201237) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "link"
-  end
-
-  create_table "recipes", force: :cascade do |t|
-    t.string   "name"
-    t.text     "ingredients"
-    t.text     "instruction"
-    t.string   "source"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "slug"
   end
 
   create_table "writings", force: :cascade do |t|
